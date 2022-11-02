@@ -1,77 +1,25 @@
 @use "./reset";
 @use "./center" as center;
 @use './fonts';
+@use './header-comp.scss' as header-comp;
+@use './header-for-lap.scss' as header-lap;
 
-body {
-	font-family: "Montserrat", sans-serif;
-	background-color: #333;
+// header dla komputerów
+@media (min-width: 1600px ) and (orientation:landscape){
+	@include header-comp.header-for-computers
 }
 
-header {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 90px;
-	background-color: white;
-	font-family: 'Metropolis-BoldItalic', sans-serif;
-	font-size: 15px;
-	text-transform: uppercase;
-	font-weight: bold;
-	
-	span{
-		margin:  auto 30px;
-	}
-	
-	.header-logo{
-		position: absolute;
-		left: 0%;
-	}
+//header dla laptopów
+@media (min-width: 1224px ) and (orientation:landscape) and (max-width: 1599px){
+	@include header-lap.header-laptops
+}
 
-	.your-purchases{
-		position: absolute;
-		margin: auto 10px;
-	}
-	.your-purchases-box{
-		@include center.centering;
-		height: 70%;
-		width: 19%;
-		border: 1px solid rgb(175, 171, 171);
-		left: 80%;
-	}
+// header dla tabletów
+@media (min-width: 750px) and (max-width: 1223px ){
 
-	.shopping-cart-icon {
-		left: 8%;
-		border-right: 1px solid rgb(175, 171, 171);
-		padding-right: 10px;
-		
-		i {
-			font-size: 3rem;
-		}
-	}
+}
 
-	.shopping-cart{
-		left: 30%;
-		top: 30%;
-		font-size: 11px ;
-		padding-left: 15px;
-
-		p{
-			position: absolute;
-			top: 80%;
-			font-weight: lighter;
-			text-transform: lowercase;
-		}
-	}
-		
-	.your-shopping-list{
-		position: absolute;
-		left: 90%;
-		@include center.centering;
-		width: 25px;
-		height: 61px;
-		background-color: lime;
-	}
-
+//header dla telefonów
+@media (min-width: 320px) and (max-width: 1223px ){
 
 }
