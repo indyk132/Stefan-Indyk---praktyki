@@ -4,6 +4,75 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?x9ofxd");
+  src: url("../fonts/icomoon.eot?x9ofxd#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?x9ofxd") format("truetype"), url("../fonts/icomoon.woff?x9ofxd") format("woff"), url("../fonts/icomoon.svg?x9ofxd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dostepnosc:before {
+  content: "\e900";
+}
+
+.icon-kontakt:before {
+  content: "\e901";
+}
+
+.icon-ulubione:before {
+  content: "\e902";
+}
+
+.icon-user:before {
+  content: "\e903";
+}
+
+.icon-strzalka-prawo:before {
+  content: "\e904";
+}
+
+.icon-strzalka-lewo:before {
+  content: "\e905";
+}
+
+.icon-shopping-chart:before {
+  content: "\e906";
+}
+
+.icon-play:before {
+  content: "\e907";
+}
+
+.icon-widok-kafelkowy:before {
+  content: "\e908";
+}
+
+.icon-widok-icon2:before {
+  content: "\e909";
+}
+
+.icon-wysylka:before {
+  content: "\e90a";
+}
+
+.icon-x:before {
+  content: "\e90b";
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #333;
@@ -14,15 +83,60 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8vh;
+  height: 90px;
   background-color: white;
+  font-family: "Metropolis-BoldItalic", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header span {
+  margin: auto 30px;
+}
+header .header-logo {
+  position: absolute;
+  left: 0%;
+}
+header .your-purchases {
+  position: absolute;
+  margin: auto 10px;
+}
+header .your-purchases-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 19%;
+  border: 1px solid rgb(175, 171, 171);
+  left: 80%;
+}
+header .shopping-cart-icon {
+  left: 8%;
+  border-right: 1px solid rgb(175, 171, 171);
+  padding-right: 10px;
+}
+header .shopping-cart-icon i {
+  font-size: 3rem;
 }
 header .shopping-cart {
-  position: absolute;
-  @i left: 90%;
-  text-transform: uppercase;
-  font-size: 10px;
+  left: 30%;
+  top: 30%;
+  font-size: 11px;
+  padding-left: 15px;
 }
-header .shopping-cart img {
-  width: 2rem;
+header .shopping-cart p {
+  position: absolute;
+  top: 80%;
+  font-weight: lighter;
+  text-transform: lowercase;
+}
+header .your-shopping-list {
+  position: absolute;
+  left: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 61px;
+  background-color: lime;
 }/*# sourceMappingURL=style.css.map */
