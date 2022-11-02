@@ -1,0 +1,26 @@
+@use "./reset";
+@use "./center" as center;
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #333;
+}
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8vh;
+	background-color: white;
+
+	.shopping-cart {
+		position: absolute;
+		@include centering;
+		left: 90%;
+		text-transform: uppercase;
+		font-size: 10px;
+		img {
+			width: 2rem;
+		}
+	}
+}
