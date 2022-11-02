@@ -1,77 +1,74 @@
 @use "./center" as center;
 @mixin header-for-computers {
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #333;
+	body {
+		font-family: "Montserrat", sans-serif;
+		background-color: #333;
+	}
+
+	header {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90px;
+		background-color: red;
+		font-family: "Metropolis-BoldItalic", sans-serif;
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		span {
+			margin-right: 100px;
+		}
+
+		.header-logo {
+			position: absolute;
+			left: 0%;
+		}
+
+		.your-purchases {
+			position: absolute;
+			margin: auto 10px;
+		}
+		.your-purchases-box {
+			@include center.centering;
+			height: 70%;
+			width: 19%;
+			border: 1px solid rgb(175, 171, 171);
+			left: 80%;
+		}
+
+		.shopping-cart-icon {
+			left: 10%;
+			border-right: 1px solid rgb(175, 171, 171);
+			padding-right: 10px;
+			text-align: center;
+			i {
+				font-size: 1px;
+			}
+		}
+
+		.shopping-cart {
+			left: 30%;
+			top: 30%;
+			font-size: 11px;
+			padding-left: 15px;
+
+			p {
+				position: absolute;
+				top: 80%;
+				font-weight: lighter;
+				text-transform: lowercase;
+			}
+		}
+
+		.your-shopping-list {
+			position: absolute;
+			left: 90%;
+			@include center.centering;
+			width: 25px;
+			height: 61px;
+			background-color: lime;
+		}
+	}
 }
-
-header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    background-color: white;
-    font-family: 'Metropolis-BoldItalic', sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    
-    span{
-        position: absolute;
-        left: 900px;
-    }
-    
-    .header-logo{
-        position: absolute;
-        left: 0%;
-    }
-
-    .your-purchases{
-        position: absolute;
-        margin: auto 10px;
-    }
-    .your-purchases-box{
-        @include center.centering;
-        height: 70%;
-        width: 19%;
-        border: 1px solid rgb(175, 171, 171);
-        left: 80%;
-    }
-
-    .shopping-cart-icon {
-        left: 10%;
-        border-right: 1px solid rgb(175, 171, 171);
-        padding-right: 10px;
-        
-        i {
-            font-size: 3rem;
-        }
-    }
-
-    .shopping-cart{
-        left: 30%;
-        top: 30%;
-        font-size: 11px ;
-        padding-left: 15px;
-
-        p{
-            position: absolute;
-            top: 80%;
-            font-weight: lighter;
-            text-transform: lowercase;
-        }
-    }
-        
-    .your-shopping-list{
-        position: absolute;
-        left: 90%;
-        @include center.centering;
-        width: 25px;
-        height: 61px;
-        background-color: lime;
-    }
-
-
-} 
-}   

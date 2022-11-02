@@ -5,12 +5,12 @@
 @use './header-for-lap.scss' as header-lap;
 
 // header dla komputerów
-@media (min-width: 1600px ) and (orientation:landscape){
+@media screen and (min-width: 1600px ) and (orientation:landscape){
 	@include header-comp.header-for-computers
 }
 
 //header dla laptopów
-@media (min-width: 1224px ) and (orientation:landscape) and (max-width: 1599px){
+@media screen and (min-width: 1224px ) and (orientation:landscape) {
 	@include header-lap.header-laptops
 }
 

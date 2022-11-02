@@ -73,7 +73,7 @@
   content: "\e90b";
 }
 
-@media (min-width: 1600px) and (orientation: landscape) {
+@media screen and (min-width: 1600px) and (orientation: landscape) {
   body {
     font-family: "Montserrat", sans-serif;
     background-color: #333;
@@ -84,7 +84,7 @@
     justify-content: center;
     align-items: center;
     height: 90px;
-    background-color: white;
+    background-color: red;
     font-family: "Metropolis-BoldItalic", sans-serif;
     font-size: 15px;
     text-transform: uppercase;
@@ -114,9 +114,10 @@
     left: 10%;
     border-right: 1px solid rgb(175, 171, 171);
     padding-right: 10px;
+    text-align: center;
   }
   header .shopping-cart-icon i {
-    font-size: 3rem;
+    font-size: 1px;
   }
   header .shopping-cart {
     left: 30%;
@@ -141,7 +142,7 @@
     background-color: lime;
   }
 }
-@media (min-width: 1224px) and (orientation: landscape) and (max-width: 1599px) {
+@media screen and (min-width: 1224px) and (orientation: landscape) {
   body {
     font-family: "Montserrat", sans-serif;
     background-color: #333;
@@ -152,7 +153,7 @@
     justify-content: center;
     align-items: center;
     height: 90px;
-    background-color: red;
+    background-color: white;
     font-family: "Metropolis-BoldItalic", sans-serif;
     font-size: 15px;
     text-transform: uppercase;
