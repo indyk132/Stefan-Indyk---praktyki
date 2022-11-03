@@ -73,140 +73,55 @@
   content: "\e90b";
 }
 
-@media screen and (min-width: 1600px) and (orientation: landscape) {
-  body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #333;
-  }
-  header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    background-color: red;
-    font-family: "Metropolis-BoldItalic", sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  header span {
-    margin-right: 100px;
-  }
-  header .header-logo {
-    position: absolute;
-    left: 0%;
-  }
-  header .your-purchases {
-    position: absolute;
-    margin: auto 10px;
-  }
-  header .your-purchases-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
-    width: 19%;
-    border: 1px solid rgb(175, 171, 171);
-    left: 80%;
-  }
-  header .shopping-cart-icon {
-    left: 10%;
-    border-right: 1px solid rgb(175, 171, 171);
-    padding-right: 10px;
-    text-align: center;
-  }
-  header .shopping-cart-icon i {
-    font-size: 1px;
-  }
-  header .shopping-cart {
-    left: 30%;
-    top: 30%;
-    font-size: 11px;
-    padding-left: 15px;
-  }
-  header .shopping-cart p {
-    position: absolute;
-    top: 80%;
-    font-weight: lighter;
-    text-transform: lowercase;
-  }
-  header .your-shopping-list {
-    position: absolute;
-    left: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 61px;
-    background-color: lime;
-  }
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
 }
-@media screen and (min-width: 1224px) and (orientation: landscape) {
-  body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #333;
-  }
-  header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    background-color: white;
-    font-family: "Metropolis-BoldItalic", sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  header span {
-    margin-right: 100px;
-  }
-  header .header-logo {
-    position: absolute;
-    left: 0%;
-  }
-  header .your-purchases {
-    position: absolute;
-    margin: auto 10px;
-  }
-  header .your-purchases-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
-    width: 19%;
-    border: 1px solid rgb(175, 171, 171);
-    left: 80%;
-  }
-  header .shopping-cart-icon {
-    left: 8%;
-    border-right: 1px solid rgb(175, 171, 171);
-    padding-right: 10px;
-  }
-  header .shopping-cart-icon i {
-    font-size: 3rem;
-  }
-  header .shopping-cart {
-    left: 30%;
-    top: 30%;
-    font-size: 11px;
-    padding-left: 15px;
-  }
-  header .shopping-cart p {
-    position: absolute;
-    top: 80%;
-    font-weight: lighter;
-    text-transform: lowercase;
-  }
-  header .your-shopping-list {
-    position: absolute;
-    left: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 61px;
-    background-color: lime;
-  }
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: white;
+  font-family: "Metropolis-BoldItalic", sans-serif;
+  font-size: 15px;
+}
+header .header-logo img {
+  width: 175px;
+  height: 50px;
+}
+
+nav {
+  height: 1000px;
+}
+
+footer {
+  height: 200px;
+  background-color: #fff;
+}
+footer .footer-menu-bottom {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+  font-size: 20px;
+  border: 1px solid #c4c5cc;
+}
+footer .footer-box-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  border-right: 1px solid #c4c5cc;
+}
+footer .shopping-cart {
+  border: 0;
 }/*# sourceMappingURL=style.css.map */

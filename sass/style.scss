@@ -1,25 +1,60 @@
 @use "./reset";
 @use "./center" as center;
 @use './fonts';
-@use './header-comp.scss' as header-comp;
-@use './header-for-lap.scss' as header-lap;
+@use './colors' as color;
+// @use './header-comp.scss' as header-comp;
+// @use './header-for-lap.scss' as header-for-lap;
 
-// header dla komputerów
-@media screen and (min-width: 1600px ) and (orientation:landscape){
-	@include header-comp.header-for-computers
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #333;
 }
 
-//header dla laptopów
-@media screen and (min-width: 1224px ) and (orientation:landscape) {
-	@include header-lap.header-laptops
+header {
+    position: relative;
+    @include center.centering;
+    height: 70px;
+    background-color: white;
+    font-family: 'Metropolis-BoldItalic', sans-serif;
+    font-size: 15px;
+
+    .header-logo{
+		img{
+			width: 175px;
+			height: 50px;
+		}
+    }
+	
 }
-
-// header dla tabletów
-@media (min-width: 750px) and (max-width: 1223px ){
-
+nav{
+	height: 1000px;
 }
-
-//header dla telefonów
-@media (min-width: 320px) and (max-width: 1223px ){
-
+footer{ 	
+	height: 200px;
+	background-color: #fff;
+	.footer-menu-bottom{
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: flex-start;
+		bottom: 0;
+		width: 100%;
+		z-index: 5;
+		background-color: white;
+		font-size: 20px;
+		border: color.$border;
+	}
+	.footer-box-menu{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20%;
+		height: 50px;
+		border-right: color.$border;
+	}
+	
+	.shopping-cart{
+		border: 0;
+	}
 }

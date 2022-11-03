@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Hurt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1ca033a64b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-menu">
+            <span class="header-logo">
+                <img src="./img/logo.png" alt="logo" />
+            </span>
+            <span class="shop">
+                <i class="icon-kontakt"></i> Kontakt
+            </span>
+            <span class="favorites">
+                <i class="icon-ulubione"></i> Ulubione
+            </span>
+            <span class="account">
+                <i class="icon-user"></i> Konto
+            </span>
+        </div>
+        <div class="your-purchases your-purchases-box">
+            <span class="your-purchases shopping-cart-icon">
+                <i class="icon-shopping-chart"></i>
+            </span>
+            <span class="your-purchases shopping-cart">
+                Twój koszyk <p> 3456.00 zł </p>
+            </span>
+            <div class="your-shopping-list">
+                <i class="icon-strzalka-prawo"></i>
+            </div>
+        </div>
+
+    </header>
+    <nav></nav>
+    <main></main>
+    <footer></footer>
+</body>
+
+</html>
