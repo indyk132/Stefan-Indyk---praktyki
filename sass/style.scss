@@ -13,17 +13,32 @@ body {
 header {
     position: relative;
     @include center.centering;
-    height: 70px;
+    height: 150px;
     background-color: white;
     font-family: 'Metropolis-BoldItalic', sans-serif;
     font-size: 15px;
-
+	.header-box{
+		@include center.centering;
+		flex-direction: column;
+	}
+	.header-top{
+		width: 100%;
+		border-bottom: color.$border;
+		height: 55px;
+	}
     .header-logo{
+		@include center.centering;
 		img{
 			width: 175px;
 			height: 50px;
 		}
     }
+
+	.header-bottom{
+		@include center.centering;
+		width: 100%;
+		height: 55px;
+	}
 	
 }
 nav{
