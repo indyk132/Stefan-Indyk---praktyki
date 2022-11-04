@@ -116,15 +116,16 @@ header .header-bottom {
   height: 55px;
 }
 
-nav {
-  height: 1000px;
+.menu {
+  opacity: 1;
+  background-color: #fff;
+  height: 500px;
 }
 
-footer {
-  height: 200px;
-  background-color: #fff;
+.menu-bar {
+  background-color: #333;
 }
-footer .footer-menu-bottom {
+.menu-bar .footer-menu-bottom {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -132,12 +133,11 @@ footer .footer-menu-bottom {
   align-content: flex-start;
   bottom: 0;
   width: 100%;
-  z-index: 5;
   background-color: white;
   font-size: 20px;
   border: 1px solid #c4c5cc;
 }
-footer .footer-box-menu {
+.menu-bar .footer-box-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,6 +145,73 @@ footer .footer-box-menu {
   height: 50px;
   border-right: 1px solid #c4c5cc;
 }
-footer .shopping-cart {
+.menu-bar .shopping-cart {
   border: 0;
+}
+
+nav {
+  height: 1000px;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  opacity: 0;
+  top: 0;
+  left: -100px;
+  width: 90%;
+  height: 93%;
+  transition: 0.3s;
+}
+.menu .menu-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 9%;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #c4c5cc;
+}
+.menu .menu-search-bar {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu-search-bar input {
+  height: 2.5rem;
+  width: 15rem;
+}
+.menu ul {
+  margin-bottom: 145px;
+  margin-left: 20px;
+  width: 93%;
+}
+.menu li {
+  display: flex;
+  border-bottom: 1px solid #c4c5cc;
+  padding: 15px;
+}
+.menu .menu-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu-products span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #c4c5cc;
+}
+.menu .inspiration {
+  border: 0;
+}
+
+.animation-switch {
+  opacity: 1;
+  transform: translateX(100px);
 }/*# sourceMappingURL=style.css.map */

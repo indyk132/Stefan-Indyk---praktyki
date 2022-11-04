@@ -28,15 +28,43 @@
     </header>
     <nav></nav>
     <main></main>
-    <footer>
-            <div class="footer-menu-bottom">
-                <div class="footer-box-menu burger-menu"><i class="icon-widok-icon2"></i></div>
-                <div class="footer-box-menu magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div class="footer-box-menu favorites"><i class="icon-ulubione"></i></div>
-                <div class="footer-box-menu user"><i class="icon-user"></i></div>
-                <div class="footer-box-menu shopping-cart"><i class="icon-shopping-chart"></i></div>
+    <footer></footer> 
+    <div class="menu">
+        <div class="menu-category">Kategoria</div>
+        <div class="menu-search-bar"><input type="text" placeholder="wpisz nazwę produktu "></div>
+        <ul>
+            <div class="menu-products">
+                <li>Produkty</li>
+                <span>
+                    <i class="icon-strzalka-prawo"></i>
+                </span>
             </div>
-    </footer>
+            <div><li>Producenci</li></div>
+            <div><li>Nowości</li></div>
+            <div><li>Promocje</li></div>
+            <div><li>Polecamy</li></div>
+            <div><li>O nas</li></div>
+            <div><li class="inspiration">Inspiracje</li></div>
+        </ul>
+    </div>
+    <div class="menu-bar">
+        <div class="footer-menu-bottom">
+            <div class="footer-box-menu burger-menu" onclick="myFunction()">
+                <i class="icon-widok-icon2"></i>
+            </div>
+            <div class="footer-box-menu magnifying-glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="footer-box-menu favorites">
+                <i class="icon-ulubione"></i></div>
+            <div class="footer-box-menu user"><i class="icon-user"></i>
+            </div>
+            <div class="footer-box-menu shopping-cart">
+                <i class="icon-shopping-chart"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./js/hamburger.js"></script>
 </body>
 
 </html>

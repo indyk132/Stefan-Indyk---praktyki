@@ -41,29 +41,25 @@ header {
 	}
 	
 }
-nav{
-	height: 1000px;
-}
-footer{ 	
-	height: 200px;
+.menu{
+	opacity: 1;
 	background-color: #fff;
+	height: 500px;
+}
+.menu-bar{ 	
+	background-color: #333;
 	.footer-menu-bottom{
 		position: fixed;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include center.centering;
 		align-content: flex-start;
 		bottom: 0;
 		width: 100%;
-		z-index: 5;
 		background-color: white;
 		font-size: 20px;
 		border: color.$border;
 	}
 	.footer-box-menu{
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include center.centering;
 		width: 20%;
 		height: 50px;
 		border-right: color.$border;
@@ -72,4 +68,70 @@ footer{
 	.shopping-cart{
 		border: 0;
 	}
+	
+}
+nav{
+	height: 1000px;
+}
+.menu{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: start;
+	opacity: 0;
+	top: 0;
+	left: -100px;
+	width: 90%;
+	height: 93%;
+	transition: 0.3s;
+	
+	.menu-category{
+		@include center.centering;
+		width: 100%;
+		height: 9%;
+		text-transform: uppercase;
+		font-weight: bold;
+		border-bottom: color.$border;
+	}
+	
+	.menu-search-bar{
+		padding: 5px 20px;
+		@include center.centering;
+		input{
+			height: 2.5rem;
+			width: 15rem;
+		}
+		
+	}
+	ul{
+		margin-bottom: 145px;
+		margin-left: 20px;
+		width: 93%;
+	}
+	
+	li{
+		display: flex;
+		border-bottom: color.$border;
+		padding: 15px;
+	}
+
+	.menu-products{
+		@include center.centering;
+
+		span{
+			@include center.centering;
+			border-left: color.$border;
+		}
+	}
+	.inspiration{
+		border: 0;
+	}
+}
+
+
+.animation-switch{
+	opacity: 1;
+	// transition: .3s;
+	transform: translateX(100px);
 }
