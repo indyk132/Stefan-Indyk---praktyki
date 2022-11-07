@@ -73,6 +73,9 @@ header {
 nav{
 	height: 1000px;
 }
+
+
+
 .menu{
 	position: fixed;
 	display: flex;
@@ -117,13 +120,34 @@ nav{
 	}
 
 	.menu-products{
-		@include center.centering;
+        @include center.centering;
 
+        li{
+            padding-left: 10px;
+            margin-left: 10rem;
+        }
 		span{
-			@include center.centering;
+            margin-left: 180px;
+			// @include center.centering;
 			border-left: color.$border;
 		}
 	}
+
+    .menu-producers{
+        @include center.centering;
+
+        li{
+            padding-right: 80px;
+            margin-left: 38px;
+        }
+		span{
+            
+            margin-left: 100px;
+			// @include center.centering;
+			border-left: color.$border;
+		}
+	}
+
 	.inspiration{
 		border: 0;
 	}

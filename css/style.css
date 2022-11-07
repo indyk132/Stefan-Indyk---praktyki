@@ -96,7 +96,7 @@ header .header-box {
 }
 header .header-top {
   width: 100%;
-  border-bottom: 1px solid #c4c5cc;
+  border-bottom: 0.5px solid rgba(50, 57, 64, 0.3);
   height: 55px;
 }
 header .header-logo {
@@ -135,7 +135,7 @@ header .header-bottom {
   width: 100%;
   background-color: white;
   font-size: 20px;
-  border: 1px solid #c4c5cc;
+  border: 0.5px solid rgba(50, 57, 64, 0.3);
 }
 .menu-bar .footer-box-menu {
   display: flex;
@@ -143,7 +143,7 @@ header .header-bottom {
   align-items: center;
   width: 20%;
   height: 50px;
-  border-right: 1px solid #c4c5cc;
+  border-right: 0.5px solid rgba(50, 57, 64, 0.3);
 }
 .menu-bar .shopping-cart {
   border: 0;
@@ -174,7 +174,7 @@ nav {
   height: 9%;
   text-transform: uppercase;
   font-weight: bold;
-  border-bottom: 1px solid #c4c5cc;
+  border-bottom: 0.5px solid rgba(50, 57, 64, 0.3);
 }
 .menu .menu-search-bar {
   padding: 5px 20px;
@@ -193,7 +193,7 @@ nav {
 }
 .menu li {
   display: flex;
-  border-bottom: 1px solid #c4c5cc;
+  border-bottom: 0.5px solid rgba(50, 57, 64, 0.3);
   padding: 15px;
 }
 .menu .menu-products {
@@ -201,11 +201,26 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.menu .menu-products li {
+  padding-left: 10px;
+  margin-left: 10rem;
+}
 .menu .menu-products span {
+  margin-left: 180px;
+  border-left: 0.5px solid rgba(50, 57, 64, 0.3);
+}
+.menu .menu-producers {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid #c4c5cc;
+}
+.menu .menu-producers li {
+  padding-right: 80px;
+  margin-left: 38px;
+}
+.menu .menu-producers span {
+  margin-left: 100px;
+  border-left: 0.5px solid rgba(50, 57, 64, 0.3);
 }
 .menu .inspiration {
   border: 0;
