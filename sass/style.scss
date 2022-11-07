@@ -75,7 +75,7 @@ nav{
 }
 
 
-
+// hamburger-menu
 .menu{
 	position: fixed;
 	display: flex;
@@ -88,7 +88,7 @@ nav{
 	width: 90%;
 	height: 93%;
 	transition: 0.3s;
-	
+
 	.menu-category{
 		@include center.centering;
 		width: 100%;
@@ -114,6 +114,7 @@ nav{
 	}
 	
 	li{
+        width: 100%;
 		display: flex;
 		border-bottom: color.$border;
 		padding: 15px;
@@ -123,13 +124,19 @@ nav{
         @include center.centering;
 
         li{
-            padding-left: 10px;
-            margin-left: 10rem;
+            padding-left: 12px;
+            // margin-left: 10rem;
         }
 		span{
-            margin-left: 180px;
-			// @include center.centering;
+            margin-left: 150px;
+            padding: auto 100px;
+            @include center.centering;
 			border-left: color.$border;
+
+            i{
+                padding-top: 10px;
+                margin-bottom: 10px;
+            }
 		}
 	}
 
@@ -141,7 +148,6 @@ nav{
             margin-left: 38px;
         }
 		span{
-            
             margin-left: 100px;
 			// @include center.centering;
 			border-left: color.$border;
@@ -153,9 +159,8 @@ nav{
 	}
 }
 
-
+//animacja
 .animation-switch{
 	opacity: 1;
-	// transition: .3s;
 	transform: translateX(100px);
 }

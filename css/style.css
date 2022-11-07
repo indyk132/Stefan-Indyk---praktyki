@@ -192,6 +192,7 @@ nav {
   width: 93%;
 }
 .menu li {
+  width: 100%;
   display: flex;
   border-bottom: 0.5px solid rgba(50, 57, 64, 0.3);
   padding: 15px;
@@ -202,12 +203,19 @@ nav {
   align-items: center;
 }
 .menu .menu-products li {
-  padding-left: 10px;
-  margin-left: 10rem;
+  padding-left: 12px;
 }
 .menu .menu-products span {
-  margin-left: 180px;
+  margin-left: 150px;
+  padding: auto 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-left: 0.5px solid rgba(50, 57, 64, 0.3);
+}
+.menu .menu-products span i {
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 .menu .menu-producers {
   display: flex;
