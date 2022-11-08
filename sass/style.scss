@@ -8,8 +8,6 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #333;
-    height: 100%;
-    width: 100%;
 }
 
 //header
@@ -20,29 +18,23 @@ header {
     background-color: white;
     font-family: 'Metropolis-BoldItalic', sans-serif;
     font-size: 15px;
-	.header-box{
+	.header_box{
 		@include center.centering;
 		flex-direction: column;
 	}
-	.header-top{
+	.header_top{
 		width: 100%;
 		border-bottom: color.$border;
 		height: 55px;
 	}
-    .header-logo{
+    .header_logo{
 		@include center.centering;
+
 		img{
 			width: 175px;
 			height: 50px;
 		}
     }
-
-	.header-bottom{
-		@include center.centering;
-		width: 100%;
-		height: 55px;
-	}
-	
 }
 main{
     height: 500px;
@@ -55,10 +47,10 @@ main{
     }
 }
 
-.menu-bar{ 	
+.menu_mobileBar{ 	
 
 	background-color: #333;
-	.footer-menu-bottom{
+	.menu_mobileBottom{
 		position: fixed;
 		@include center.centering;
 		align-content: flex-start;
@@ -68,14 +60,14 @@ main{
 		font-size: 20px;
 		border: color.$border;
 	}
-	.footer-box-menu{
+	.menu_mobileBox{
 		@include center.centering;
 		width: 20%;
 		height: 50px;
 		border-right: color.$border;
 	}
 	
-	.shopping-cart{
+	.shopping_cart{
 		border: 0;
 	}
 	
@@ -89,6 +81,7 @@ main{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+
 	opacity: 0;
 	top: 0;
 	left: -100px;
@@ -97,7 +90,7 @@ main{
     background-color: #fff;
 	transition: 0.3s;
 
-	.menu-category{
+	.menu_category{
 		@include center.centering;
 		width: 100%;
 		height: 9%;

@@ -76,8 +76,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #333;
-  height: 100%;
-  width: 100%;
 }
 
 header {
@@ -90,32 +88,25 @@ header {
   font-family: "Metropolis-BoldItalic", sans-serif;
   font-size: 15px;
 }
-header .header-box {
+header .header_box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-header .header-top {
+header .header_top {
   width: 100%;
   border-bottom: 0.5px solid rgba(50, 57, 64, 0.3);
   height: 55px;
 }
-header .header-logo {
+header .header_logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .header-logo img {
+header .header_logo img {
   width: 175px;
   height: 50px;
-}
-header .header-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 55px;
 }
 
 main {
@@ -128,10 +119,10 @@ main img {
   width: 300px;
 }
 
-.menu-bar {
+.menu_mobileBar {
   background-color: #333;
 }
-.menu-bar .footer-menu-bottom {
+.menu_mobileBar .menu_mobileBottom {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -143,7 +134,7 @@ main img {
   font-size: 20px;
   border: 0.5px solid rgba(50, 57, 64, 0.3);
 }
-.menu-bar .footer-box-menu {
+.menu_mobileBar .menu_mobileBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,7 +142,7 @@ main img {
   height: 50px;
   border-right: 0.5px solid rgba(50, 57, 64, 0.3);
 }
-.menu-bar .shopping-cart {
+.menu_mobileBar .shopping_cart {
   border: 0;
 }
 
@@ -168,7 +159,7 @@ main img {
   background-color: #fff;
   transition: 0.3s;
 }
-.menu .menu-category {
+.menu .menu_category {
   display: flex;
   justify-content: center;
   align-items: center;
