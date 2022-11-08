@@ -78,6 +78,10 @@ body {
   background-color: #333;
 }
 
+#container {
+  padding: 5px;
+}
+
 header {
   position: relative;
   display: flex;
@@ -110,13 +114,49 @@ header .header_logo img {
 }
 
 main {
-  height: 500px;
+  height: 90%;
   width: 100%;
   background-color: red;
 }
-main img {
-  height: 300px;
-  width: 300px;
+main .slider_mobileTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .slider_mobileTop img {
+  height: 250px;
+  width: 100%;
+  padding: 15px;
+}
+main .slider_mobileTop .producer_brandLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+main .slider_mobileTop .producer_brandLogo img {
+  background: #fff;
+  height: 125px;
+  width: 95%;
+}
+main .slider_mobileTop .producer_brandLogo .producer_bannerField {
+  background-color: #2780bc;
+  height: 125px;
+  width: 5%;
+}
+main .main_products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 10%;
+}
+main .main_products .main_products_label {
+  flex-direction: column;
+}
+main .main_products .main_products_label .main_products_label_smartLighting {
+  text-transform: uppercase;
 }
 
 .menu_mobileBar {
@@ -128,7 +168,7 @@ main img {
   justify-content: center;
   align-items: center;
   align-content: flex-start;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   background-color: white;
   font-size: 20px;
@@ -153,11 +193,11 @@ main img {
   flex-direction: column;
   opacity: 0;
   top: 0;
-  left: -100px;
+  left: -400px;
   width: 90%;
   height: 93%;
   background-color: #fff;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .menu .menu_category {
   display: flex;
@@ -168,16 +208,6 @@ main img {
   text-transform: uppercase;
   font-weight: bold;
   border-bottom: 0.5px solid rgba(50, 57, 64, 0.3);
-}
-.menu .menu-search-bar {
-  padding: 5px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu .menu-search-bar input {
-  height: 2.5rem;
-  width: 15rem;
 }
 .menu ul {
   margin-bottom: 145px;
@@ -227,5 +257,5 @@ main img {
 
 .animation-switch {
   opacity: 1;
-  transform: translateX(100px);
+  transform: translateX(400px);
 }/*# sourceMappingURL=style.css.map */

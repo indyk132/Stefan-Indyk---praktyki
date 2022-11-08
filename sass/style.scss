@@ -1,96 +1,131 @@
 @use "./reset";
 @use "./center" as center;
-@use './fonts';
-@use './colors' as color;
+@use "./fonts";
+@use "./colors" as color;
 // @use './header-comp.scss' as header-comp;
 // @use './header-for-lap.scss' as header-for-lap;
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #333;
+	font-family: "Montserrat", sans-serif;
+	background-color: #333;
+	// width: 100%;
+}
+#container{
+	padding: 5px;
 }
 
 //header
 header {
-    position: relative;
-    @include center.centering;
-    height: 150px;
-    background-color: white;
-    font-family: 'Metropolis-BoldItalic', sans-serif;
-    font-size: 15px;
-	.header_box{
+	position: relative;
+	@include center.centering;
+	height: 150px;
+	background-color: white;
+	font-family: "Metropolis-BoldItalic", sans-serif;
+	font-size: 15px;
+	.header_box {
 		@include center.centering;
 		flex-direction: column;
 	}
-	.header_top{
+	.header_top {
 		width: 100%;
 		border-bottom: color.$border;
 		height: 55px;
 	}
-    .header_logo{
+	.header_logo {
 		@include center.centering;
 
-		img{
+		img {
 			width: 175px;
 			height: 50px;
 		}
-    }
+	}
 }
-main{
-    height: 500px;
-    width: 100%;
-    background-color: red;
+main {
+	height: 90%;
+	width: 100%;
+	background-color: red;
 
-    img{
-        height: 300px;
-        width: 300px;
-    }
+	.slider_mobileTop {
+		@include center.centering;
+		flex-direction: column;
+
+		img {
+			height: 250px;
+			width: 100%;
+			padding: 15px;
+		}
+
+		.producer_brandLogo{
+			@include center.centering;
+			flex-direction: row;
+
+			img{
+				background: #fff;
+				height: 125px;
+				width: 95%;
+			}
+			.producer_bannerField{
+				background-color: #2780bc;
+				height: 125px;
+				width: 5%;
+			}
+		}
+	}
+	
+	.main_products{
+		@include center.centering;
+		background-color: #fff;
+		height: 10%;
+		.main_products_label{
+			flex-direction: column;
+			
+			.main_products_label_smartLighting{
+				text-transform: uppercase;
+			}
+		}
+	}
 }
 
-.menu_mobileBar{ 	
-
+.menu_mobileBar {
 	background-color: #333;
-	.menu_mobileBottom{
+
+	.menu_mobileBottom {
 		position: fixed;
 		@include center.centering;
 		align-content: flex-start;
-		bottom: 0;
+		bottom: -1px;
 		width: 100%;
 		background-color: white;
 		font-size: 20px;
 		border: color.$border;
 	}
-	.menu_mobileBox{
+	.menu_mobileBox {
 		@include center.centering;
 		width: 20%;
 		height: 50px;
 		border-right: color.$border;
 	}
-	
-	.shopping_cart{
+
+	.shopping_cart {
 		border: 0;
 	}
-	
 }
 
-
-
 // hamburger-menu
-.menu{
+.menu {
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-
 	opacity: 0;
 	top: 0;
-	left: -100px;
+	left: -400px;
 	width: 90%;
 	height: 93%;
-    background-color: #fff;
-	transition: 0.3s;
+	background-color: #fff;
+	transition: 0.4s;
 
-	.menu_category{
+	.menu_category {
 		@include center.centering;
 		width: 100%;
 		height: 9%;
@@ -98,73 +133,62 @@ main{
 		font-weight: bold;
 		border-bottom: color.$border;
 	}
-	
-	.menu-search-bar{
-		padding: 5px 20px;
-		@include center.centering;
-		input{
-			height: 2.5rem;
-			width: 15rem;
-		}
-		
-	}
-	ul{
+	ul {
 		margin-bottom: 145px;
 		margin-left: 20px;
 		width: 93%;
 	}
-	
-	li{
-        width: 100%;
+
+	li {
+		width: 100%;
 		display: flex;
 		border-bottom: color.$border;
 		padding: 15px;
 	}
 
-	.menu-products{
-        @include center.centering;
-        
+	.menu-products {
+		@include center.centering;
 
-        li{
-            height: 100%;
-            padding-left: 12px;
-            // margin-left: 10rem;
-        }
-		span{
-            height: 100%;
-            margin-left: 150px;
-            // padding: auto 100px;
-            @include center.centering;
+		li {
+			height: 100%;
+			padding-left: 12px;
+			// margin-left: 10rem;
+		}
+		span {
+			height: 100%;
+			margin-left: 150px;
+			// padding: auto 100px;
+			@include center.centering;
 			border-left: color.$border;
-            overflow: hidden;
+			overflow: hidden;
 
-            // i{  
-            //     padding-bottom: 5px; 
-            // }
+			// i{
+			//     padding-bottom: 5px;
+			// }
 		}
 	}
 
-    .menu-producers{
-        @include center.centering;
+	.menu-producers {
+		@include center.centering;
 
-        li{
-            padding-right: 80px;
-            margin-left: 38px;
-        }
-		span{
-            margin-left: 100px;
+		li {
+			padding-right: 80px;
+			margin-left: 38px;
+		}
+		span {
+			margin-left: 100px;
 			// @include center.centering;
 			border-left: color.$border;
 		}
 	}
 
-	.inspiration{
+	.inspiration {
 		border: 0;
 	}
 }
 
 //animacja
-.animation-switch{
+.animation-switch {
 	opacity: 1;
-	transform: translateX(100px);
+	transform: translateX(400px);
 }
