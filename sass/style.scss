@@ -7,11 +7,13 @@
 
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: #333;
+	background-color: #fff;
 	// width: 100%;
 }
 #container{
+	width: 100%;
 	padding: 5px;
+	max-width: 500px;
 }
 
 //header
@@ -43,7 +45,8 @@ header {
 main {
 	height: 90%;
 	width: 100%;
-	background-color: red;
+	background-color: white;
+	margin-bottom: 30%;
 
 	.slider_mobileTop {
 		@include center.centering;
@@ -54,11 +57,11 @@ main {
 			width: 100%;
 			padding: 15px;
 		}
-
+		
 		.producer_brandLogo{
 			@include center.centering;
 			flex-direction: row;
-
+			
 			img{
 				background: #fff;
 				height: 125px;
@@ -72,47 +75,48 @@ main {
 		}
 	}
 	
-	.main_products{
+	.main_section_products{
 		@include center.centering;
 		background-color: #fff;
+		width: 100%;
 		height: 10%;
-		.main_products_label{
+		.main_section_products_label{
 			flex-direction: column;
-			
-			.main_products_label_smartLighting{
+			height: 1000px;
+
+			.main_section_products_label_smartLighting{
 				text-transform: uppercase;
+				padding: 30px;
+			}
+
+			.main_section_products_labelUnderline{
+				margin-left: 39%;
+				width: 20%;
+				border-bottom: 3px solid red;
+			}
+			.lightBulb_container{
+				.main_section_productSlider{
+					@include center.centering;
+					max-width:	300px;
+
+					.productSliderContainer{
+						@include center.centering;
+						padding: 30px 15px 0 15px;
+						overflow: auto;
+
+						.bulb1{
+							padding-left: 60px;
+						}
+					}
+					
+				}
 			}
 		}
 	}
 }
 
-.menu_mobileBar {
-	background-color: #333;
-
-	.menu_mobileBottom {
-		position: fixed;
-		@include center.centering;
-		align-content: flex-start;
-		bottom: -1px;
-		width: 100%;
-		background-color: white;
-		font-size: 20px;
-		border: color.$border;
-	}
-	.menu_mobileBox {
-		@include center.centering;
-		width: 20%;
-		height: 50px;
-		border-right: color.$border;
-	}
-
-	.shopping_cart {
-		border: 0;
-	}
-}
-
 // hamburger-menu
-.menu {
+.menu_hamburgerList {
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
@@ -186,6 +190,32 @@ main {
 		border: 0;
 	}
 }
+//menu_mobileBar
+.menu_mobileBar {
+	background-color: #333;
+	margin: -5px;
+	.menu_mobileBottom {
+		position: fixed;
+		@include center.centering;
+		align-content: flex-start;
+		bottom: -1px;
+		width: 100%;
+		background-color: white;
+		font-size: 20px;
+		border: color.$border;
+	}
+	.menu_mobileBox {
+		@include center.centering;
+		width: 20%;
+		height: 50px;
+		border-right: color.$border;
+	}
+
+	.shopping_cart {
+		border: 0;
+	}
+}
+
 
 //animacja
 .animation-switch {

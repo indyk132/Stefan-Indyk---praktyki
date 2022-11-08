@@ -1,5 +1,5 @@
-const hamburgerMenu = document.querySelector('.menu');
-const menuBar = document.querySelector('.burger_menu')
+const hamburgerMenu = document.querySelector('.menu_hamburgerList');
+const menuBar = document.querySelector('.mobile_menuButton')
 function myFunction(){
     hamburgerMenu.classList.toggle('animation-switch')
 }
