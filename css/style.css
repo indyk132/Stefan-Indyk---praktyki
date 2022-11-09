@@ -173,9 +173,11 @@ main .main_section_products .main_section_products_label .lightBulb_container .m
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 300px;
+  max-width: 320px;
+  width: 100%;
 }
 main .main_section_products .main_section_products_label .lightBulb_container .main_section_productSlider .productSliderContainer {
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +185,21 @@ main .main_section_products .main_section_products_label .lightBulb_container .m
   overflow: auto;
 }
 main .main_section_products .main_section_products_label .lightBulb_container .main_section_productSlider .productSliderContainer .bulb1 {
-  padding-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+main .main_section_products .main_section_products_label .lightBulb_container .main_section_productSlider .productSliderContainer .bulb2 {
+  margin-left: 200px;
+}
+main .whyUs__container {
+  height: 500px;
+  width: 100%;
+}
+main .whyUs__container .whyUs__background {
+  height: 100%;
+  width: 100%;
 }
 
 .menu_hamburgerList {
