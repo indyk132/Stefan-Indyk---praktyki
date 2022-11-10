@@ -78,12 +78,6 @@ body {
   background-color: #fff;
 }
 
-#container {
-  width: 100%;
-  padding: 5px;
-  max-width: 500px;
-}
-
 header {
   position: relative;
   display: flex;
@@ -158,7 +152,7 @@ main .main_section_products {
 }
 main .main_section_products .main_section_products_label {
   flex-direction: column;
-  height: 1000px;
+  height: 450px;
 }
 main .main_section_products .main_section_products_label .main_section_products_label_smartLighting {
   text-transform: uppercase;
@@ -196,10 +190,47 @@ main .main_section_products .main_section_products_label .lightBulb_container .m
 main .whyUs__container {
   height: 500px;
   width: 100%;
+  background-image: url("/img/img_02.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-main .whyUs__container .whyUs__background {
+main .whyUs__container .whyUs__shadow {
+  background-color: rgba(0, 0, 0, 0.342);
   height: 100%;
   width: 100%;
+}
+main .whyUs__container .whyUs__label {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .whyUs__container .whyUs__label .whyUs__heading {
+  text-align: center;
+  padding-bottom: 25px;
+}
+main .whyUs__container .whyUs__label .whyUs__heading span {
+  display: block;
+  border-bottom: 0.5px solid rgba(50, 57, 64, 0.3);
+  padding-bottom: 15px;
+  margin: 20px 0 22px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .whyUs__container .whyUs__label .whyUs__banner {
+  width: 290px;
+  height: 103px;
+  margin-top: 21px;
+}
+main .whyUs__container .whyUs__label .whyUs__banner .banner__item {
+  font-size: 30px;
+  height: 125px;
+  width: 61px;
+  border: 0.5px solid rgba(50, 57, 64, 0.3);
 }
 
 .menu_hamburgerList {
@@ -273,7 +304,6 @@ main .whyUs__container .whyUs__background {
 
 .menu_mobileBar {
   background-color: #333;
-  margin: -5px;
 }
 .menu_mobileBar .menu_mobileBottom {
   position: fixed;

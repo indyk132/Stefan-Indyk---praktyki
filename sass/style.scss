@@ -8,13 +8,10 @@
 body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #fff;
+	
 	// width: 100%;
 }
-#container{
-	width: 100%;
-	padding: 5px;
-	max-width: 500px;
-}
+
 
 //header
 header {
@@ -82,7 +79,7 @@ main {
 		height: 10%;
 		.main_section_products_label{
 			flex-direction: column;
-			height: 1000px;
+			height: 450px;
 
 			.main_section_products_label_smartLighting{
 				text-transform: uppercase;
@@ -99,7 +96,6 @@ main {
 					@include center.centering;
 					max-width:	320px;
 					width: 100%;
-
 					.productSliderContainer{
 						height: 250px;
 						@include center.centering;
@@ -126,11 +122,58 @@ main {
 	.whyUs__container{
 		height: 500px;
 		width: 100%;
-		.whyUs__background{
-			
+		background-image: url('/img/img_02.jpg');
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.whyUs__shadow{
+			background-color:rgba(0, 0, 0, 0.342);
 			height: 100%;
 			width: 100%;
-			// background-image: url('/img/img_02.jpg');
+		}
+
+		.whyUs__label{
+			position: relative;
+			color: white;
+			@include center.centering;
+			flex-direction: column;
+
+			.whyUs__heading{
+				text-align: center;
+				padding-bottom: 25px;
+				span{
+					// text-align: center;
+					display: block;
+					border-bottom: color.$border;
+					padding-bottom: 15px;
+					margin: 20px 0 22px 0;	
+					font-weight: bold;
+					font-size: 20px;
+					
+				}
+				// span::after{
+				// 	position: absolute;
+				// 	background: red;
+				// 	bottom: 0;
+				// 	content: "";
+				// 	display: block;
+				// 	width: 60px;
+				// 	height: 3px;
+				// }
+			}
+		.whyUs__banner{
+			width: 290px;
+			height: 103px;
+			margin-top: 21px;
+			.banner__item{
+				font-size: 30px;
+				height: 125px;
+				width: 61px;
+				border: color.$border;
+			}
+		}
 		}
 	}
 }
@@ -213,7 +256,7 @@ main {
 //menu_mobileBar
 .menu_mobileBar {
 	background-color: #333;
-	margin: -5px;
+	// margin: -5px;
 	.menu_mobileBottom {
 		position: fixed;
 		@include center.centering;
